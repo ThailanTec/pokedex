@@ -2,9 +2,11 @@
 
 Projeto criado para praticar com Vue.js , o sistema utiliza da api da pokeapi.co para consumo dos dados.
 
-## Bibliotecas 
+https://pokedextsj.netlify.app/
 
-# Bulma
+# Bibliotecas 
+
+##Bulma
 
 Para o desenvolvimento Front-end
 
