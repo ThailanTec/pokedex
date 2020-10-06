@@ -6,7 +6,7 @@ https://pokedextsj.netlify.app/
 
 # Bibliotecas 
 
-##Bulma
+#Bulma
 
 Para o desenvolvimento Front-end
 
