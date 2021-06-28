@@ -1,0 +1,108 @@
+O que é o Quasar?
+
+Framework criado em cima do Vue Js, para conseguir compilar para diversas plataformas.
+
+
+-- Iniciando uma aplicação com o Quasar! 
+
+1 - quasar create <nome da pasta>
+
+Serve para iniciar um projeto com Quasar. Assim o mesmo já vai vir com todas as funcionalidades do CLI do Quasar. 
+
+2 - quasar dev .
+
+Serve para iniciar a aplicação.
+
+## Quasar CLI 
+
+No arquivo quasar.conf.js, conseguimos configurar diversas depedencias do projeto. Assim podemos habilitar configuração para o Internet. Configuração dos componentes. 
+
+Quasar MODE! 
+
+Conseguimos atraves do mesmo criar uma configuração para cada tipo de app, onde assim conseguimos passar o tipo: pwa, ssr, quasar. 
+
+quasar mode add pwa 
+
+é um exemplo de codigo, assim ele define uma estrutura para apenas o pwa, e funciona assim para o electro e outros. 
+
+Para rodar com no modo pwa, damos o comando:
+
+quasar dev -m pwa
+
+Assim informamos o modo que queremos rodar.
+
+## Quasar Build
+
+quasar build vai conter os arquivos para compilar os projetos já definidos. 
+
+quasar build pwa / ssr / spa
+
+são alguns dos comandos possiveis. 
+
+
+## Quasar NEW Criação de pastas/arquivos
+
+quasar new page Perfil
+
+Com esse comando conseguimos criar arquivos dentro da pasta. 
+
+Obs: Devemos referenciar esse arquivo dentro da pagina de rotas, por que ele não faz isso automaticamente. 
+
+## Para criar a rotas
+
+Para essa configaração devemos ir no arquivo router.js e lá adicionar a seguinte linha: 
+
+## Para criar um novo layout
+
+Primeiro inciamos com o comando: 
+
+quasar new layout <Nome_Layout> LayoutPerfil
+
+Assim o mesmo vai criar um novo layout.
+
+Esse comando vai criar um novo layou.
+
+para referenciar a rota ao mesmo, pode criar no arquivos de rotas o seguinte script:
+
+ {
+    path: '/perfil',
+    component: ()=> import('layouts/LayoutPerfil.vue'),
+    children: [
+      { path: '', component: () => import('pages/Perfil.vue')}
+    ]
+  },
+
+  Assim criamos uma nova rota na aplicação.
+
+
+## Layout Builder
+
+No link: 
+https://quasar.dev/layout-builder
+
+Conseguimos definir o que queremos de base no nosso layout. Assim podemos escolher por base como vai ser o layout. 
+
+Clicando em continuar temos algumas configurações para o layout. 
+
+Escolhendo quem vai ter prioridade sobre quem, se selecionamos o "I" do drawer lateral, ele vai sobrepor e vai autoridade sobre o header por exemplo. 
+
+O H maisculo do Header ele fica fixo no topo.
+O h minuculo ele fica acompanhando a pagina.
+
+O L deixa o scroll acompanhar a página. 
+O I deixa o scroll fixo na página. 
+
+O f deixa o fotter acompanhar a pagina ou não.
+
+##Header // Fottor
+o Header Reavel e fotter Reavel, faz com o header suma em certa parte da página. 
+
+## Left-side drawer
+
+Assim o overlay mode, vai passar por cima do componente ao invez de empurar para o lado.
+
+ Parte Final 
+
+ Remove os textos.        
+
+Assim, temos um layout padrão mais pratico para criar uma configuração. 
